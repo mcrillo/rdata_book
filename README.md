@@ -1,15 +1,15 @@
 
-__Planktology Lab - R Club__
+## __Planktology Lab - R Club__
 
 R for Data Science (Garrett Grolemund & Hadley Wickham)  
 https://r4ds.had.co.nz/  
 
 
+
 __Next R Clubs:__
 
 Monday 13.04  (Easter)  
-Practise ggplot (geom functions). Try plottingyour own data as well (use the 'diamonds' and 'mpg' example datasets from ggplot as reference)
-See also:
+Practise ggplot (geom functions). Try plottingyour own data as well (use the 'diamonds' and 'mpg' example datasets from ggplot as reference). See also:  
 https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf
 https://ggplot2.tidyverse.org/reference/#section-layer-geoms
 
