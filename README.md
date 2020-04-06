@@ -17,7 +17,7 @@ __Monday 20.04__
 5 Data Transformation
 
 __Monday 27.04__  
-7 Exploratory Data Analysis
+7 Exploratory Data Analysis  
 8 Workflow: projects
 
 __Monday 04.05: II Wrangle__  
