@@ -1,4 +1,4 @@
-## 23.03.2020
+### 23.03.2020
 
 __Philip:__   
 This link leads to a collection of helpful overviews on basic commands in R
@@ -9,14 +9,14 @@ __Helmut:__
 (Grace J.B., et al Science, 335, DOI 10.1126/science.1214939)
 
 
-## 30.03.2020
+### 30.03.2020
 
 __Patrick:__  
 Here is a link with some cool extensions to ggplot2 I just found. For the situation Pablo was talking about with needing to make plot grids/facet wraps with very different axis ranges, I have already used ggpubr::ggarrange and cowplot::plot_grid a lot, but it looks like this 'patchwork' package might make it even easier to arrange plots together.
 https://mode.com/blog/r-ggplot-extension-packages
 
 
-## 06.04.2020
+### 06.04.2020
 
 __Phillip:__  
 * violin plots as a possibility to tackle the mentioned overplotting issue with boxplots:  http://www.sthda.com/english/wiki/ggplot2-violin-plot-quick-start-guide-r-software-and-data-visualization  
