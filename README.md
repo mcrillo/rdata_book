@@ -1,5 +1,5 @@
 
-## __Planktology Lab _R Club_ __
+## __Planktology Lab *R Club*__
 *Mondays from 12:00 to 13:00*
 
 R for Data Science (Garrett Grolemund & Hadley Wickham)  
