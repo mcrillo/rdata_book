@@ -9,8 +9,10 @@
 library(nycflights13)
 library(tidyverse)
 
+?nycflights13
 ?flights
-
+?dbplyr
+  
 #********************************
 ### 5.2 filter(): selecting rows
 
@@ -44,13 +46,15 @@ filter(df, is.na(x) | x > 1)
 names(flights)
 
 # Had an arrival delay of two or more hours
-filter(flights, arr_delay >= 2)
+filter(flights, arr_delay >= 120)
+?flights
 
 # Flew to Houston (IAH or HOU)
-filter(flights, dest %in% c("IAH", "HOU"))
+flights_iah_hou <- filter(flights, dest %in% c("IAH", "HOU"))
 
 # Were operated by United, American, or Delta
 flights$carrier # Which ones are c("United","American","Delta")?
+filter(flights, carrier %in% c("DL", "AA", "UA"))
 # filter(flights, dest %in% c("United","American","Delta"))
 
 # Departed in summer (July, August, and September)
@@ -64,8 +68,8 @@ filter(flights, flights$dep_delay == 0 & arr_delay>=120)
 filter(flights, flights$dep_delay >= 60 & arr_delay<=30)
 
 # Departed between midnight and 6am (inclusive)
-filter(flights, flights$dep_time >= 000 & flights$dep_time <= 600 )
-filter(flights, flights$dep_time >= 000, flights$dep_time <= 600 )
+filter(flights, flights$dep_time >= 000 & flights$dep_time <= 600)
+filter(flights, flights$dep_time >= 000, flights$dep_time <= 600)
 
 # Another useful dplyr filtering helper is between(). 
 ?between()
@@ -73,6 +77,9 @@ filter(flights, between(x = dep_time, left = 000, right = 600))
 
 # How many flights have a missing dep_time? 
 filter(flights, is.na(dep_time))
+?is.na
+is.na(flights$dep_time)
+flights$dep_time >= 000
 
 # Why is NA ^ 0 not missing? Why is NA | TRUE not missing? Why is FALSE & NA not missing? Can you figure out the general rule? (NA * 0 is a tricky counterexample!)
 # ??????????
@@ -98,8 +105,8 @@ arrange(df, desc(x))
 ##
 
 # How could you use arrange() to sort all missing values to the start? (Hint: use is.na()).
-# arrange(df, is.na(x), x) 
-# ??????????
+arrange(df, as.numeric(is.na(df)))
+arrange(df, desc(as.numeric(is.na(df)))) 
 
 # Sort flights to find the most delayed flights. 
 arrange(flights, desc(arr_delay))
@@ -131,23 +138,27 @@ rename(flights, tail_num = tailnum)
 ##
 
 # Brainstorm as many ways as possible to select dep_time, dep_delay, arr_time, and arr_delay from flights.
-select(flights, dep_time, dep_delay, arr_time) 
-select(flights, dep_delay, dep_time, arr_time) 
+select(flights, dep_time, dep_delay, arr_time, arr_delay) 
 names(flights)
-select(flights, dep_time:arr_time) 
+select(flights, starts_with("dep"), starts_with("arr")) 
 
 # What happens if you include the name of a variable multiple times in a select() call?
-select(flights, dep_delay, dep_delay, dep_delay, dep_delay) 
+select(flights, dep_delay, arr_delay, dep_delay, dep_delay) 
 
 # What does the one_of() function do? Why might it be helpful in conjunction with this vector?
 ?tidyselect::one_of
 # one_of() is retired in favour of the more precise any_of() and all_of() selectors.
-vars <- c("year", "month", "day", "dep_delay", "arr_delay")
+vars <- c("year", "month", "day", "dep_delay", "arr_delay", "column")
 select(flights, one_of(vars))
 select(flights, all_of(vars)) 
 select(flights, any_of(vars)) # Same as all_of(), except that no error is thrown for names that don't exist.
 
+?select
+?stats::filter
+?dplyr::filter
+
 ?tidyselect::select_helpers # helper functions
+?ends_with
 # starts_with("abc"): matches names that begin with “abc”.
 # ends_with("xyz"): matches names that end with “xyz”.
 # contains("ijk"): matches names that contain “ijk”.
@@ -164,10 +175,11 @@ select(flights, time_hour, air_time, everything())
 
 
 select(flights, contains("TIME"))
-select(flights, contains("time"))
+select(flights, contains("Time"))
 select(flights, contains("TiMe")) 
-select(flights, contains("TiMe"), ignore.case = TRUE) # Default
-select(flights, contains("TiMe"), ignore.case = FALSE) # Default
+# CHECK:
+# select(flights, contains("TiMe"), ignore.case = TRUE) # Default
+# select(flights, contains("TiMe"), ignore.case = FALSE) 
 
 
 #***********************************************************************
@@ -192,16 +204,16 @@ mutate(flights_sml,
 # The key property is that the function must be vectorised: 
 # It must take a vector of values as input, return a vector with the same number of values as output. 
 mutate(flights_sml,
-       gain = dep_delay - arr_delay,
-       hours = 3
+       three = "Marina"
 )
 
 # If you only want to keep the new variables, use transmute():
-transmute(flights,
+gain <- transmute(flights,
           gain = dep_delay - arr_delay,
           hours = air_time / 60,
           gain_per_hour = gain / hours
 )
+
 
 ## 5.5.1 Useful creation functions
 ?base::Comparison
@@ -225,7 +237,7 @@ transmute(flights,
           arr_time,
           arr_hour = arr_time %/% 100,
           arr_minute = arr_time %% 100,
-          arr_time_minutes = (arr_hour*60) + arr_minute,
+          arr_time_minutes = (arr_hour*60) + arr_minute
 )
 
 
@@ -245,8 +257,8 @@ transmute(flights,
           dep_time_minutes = ((dep_time %/% 100)*60) + (dep_time %% 100),
           arr_time, # format HHMM or HMM
           arr_time_minutes = ((arr_time %/% 100)*60) + (arr_time %% 100),
-          arr_dep = arr_time_minutes - dep_time_minutes
-) #???????????????????????
+          arr_dep = (arr_time_minutes - dep_time_minutes) + (dep_delay + arr_delay)
+) 
 
 
 # Compare dep_time, sched_dep_time, and dep_delay. 
@@ -262,14 +274,16 @@ transmute(flights,
 
 
 # Find the 10 most delayed flights using a ranking function.
+arrange(flights, min_rank(-arr_delay))
+        
 transmute(arrange(flights, min_rank(-arr_delay)),
-          min_rank(-arr_delay),
+          rank = min_rank(-arr_delay),
           arr_delay)
 
 # How do you want to handle ties? Carefully read the documentation for min_rank().
 ?min_rank
 ?rank
-# ???????????????
+
 
 # What does 1:3 + 1:10 return? Why?
 1:3 + 1:10 
