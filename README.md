@@ -16,7 +16,7 @@ __Tuesday 21.04__
 [5 Data Transformation - Part I](https://r4ds.had.co.nz/transform.html)  
 
 __Tuesday 28.04__  
-[5 Data Transformation - Part II (5.6, 5.7)](https://r4ds.had.co.nz/transform.html)  
+[5 Data Transformation - Part II (5.6 & 5.7)](https://r4ds.had.co.nz/transform.html)  
 [8 Workflow: projects](https://r4ds.had.co.nz/workflow-projects.html)
 
 __Monday 04.05__  
@@ -28,7 +28,7 @@ __Monday 11.05__
 __Monday 18.05: II Wrangle__  
 [9 Introduction](https://r4ds.had.co.nz/wrangle-intro.html)  
 [10 Tibbles](https://r4ds.had.co.nz/tibbles.html)  
-[11 Data import - Part I (11.1, 11.2)](https://r4ds.had.co.nz/data-import.html)  
+[11 Data import - Part I (11.1 & 11.2)](https://r4ds.had.co.nz/data-import.html)  
 
 __Monday 25.05__  
 [11 Data import- Part II (11.3 - 11.6)](https://r4ds.had.co.nz/data-import.html)  
