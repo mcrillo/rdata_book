@@ -20,7 +20,8 @@ __Tuesday 28.04__
 [8 Workflow: projects](https://r4ds.had.co.nz/workflow-projects.html)
 
 __Monday 04.05__  
-Play with your own data using what we've learned, and bring a ggplot graph to show.  
+Play with your own data using what we've learned, and bring a ggplot graph to show using two geoms:  
+https://ggplot2.tidyverse.org/reference/#section-layer-geoms  
 
 __Monday 11.05__  
 [7 Exploratory Data Analysis - Part I](https://r4ds.had.co.nz/exploratory-data-analysis.html)  
