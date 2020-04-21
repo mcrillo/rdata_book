@@ -40,11 +40,11 @@ __Monday 08.06__
 [11 Data import- Part II (11.3 - 11.6)](https://r4ds.had.co.nz/data-import.html)  
 
 
-__Monday 15.06__ 
+__Monday 15.06__   
 [12 Tidy data- Part I](https://r4ds.had.co.nz/tidy-data.html)  
 
 
-__Monday 22.06__ 
+__Monday 22.06__   
 [12 Tidy data- Part II](https://r4ds.had.co.nz/tidy-data.html) 
 
 
