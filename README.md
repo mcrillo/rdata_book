@@ -16,7 +16,7 @@ __Tuesday 28.04__
 [5 Data Transformation - Part II (5.6 & 5.7)](https://r4ds.had.co.nz/transform.html)  
 
 __Monday 04.05__  
-[8 Workflow: projects](https://r4ds.had.co.nz/workflow-projects.html)
+[8 Workflow: projects](https://r4ds.had.co.nz/workflow-projects.html)  
 Play with your own data using what we've learned, and bring a ggplot graph to show using two geoms:  
 https://ggplot2.tidyverse.org/reference/#section-layer-geoms  
 
