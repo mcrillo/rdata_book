@@ -13,6 +13,9 @@ See also:
 https://ggplot2.tidyverse.org/reference/#section-layer-geoms  
 https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf  
 
+Hadley Wickham paper on Tidy Data:
+https://www.jstatsoft.org/article/view/v059i10  
+
 
 ### __Next R Clubs:__
 
