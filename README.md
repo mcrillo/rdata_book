@@ -5,6 +5,10 @@
 R for Data Science (Garrett Grolemund & Hadley Wickham)  
 https://r4ds.had.co.nz/  
 
+
+Solutions and notes on R for Data Science  
+https://github.com/cimentadaj/R4DS-Solutions  
+
 See also:  
 https://ggplot2.tidyverse.org/reference/#section-layer-geoms  
 https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf  
