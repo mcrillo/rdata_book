@@ -6,7 +6,7 @@ R for Data Science (Garrett Grolemund & Hadley Wickham)
 https://r4ds.had.co.nz/  
 
 
-Solutions and notes on R for Data Science:
+Solutions and notes on R for Data Science:  
 https://github.com/cimentadaj/R4DS-Solutions  
 
 ggplot2 helpful links:   
