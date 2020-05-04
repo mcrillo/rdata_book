@@ -21,16 +21,17 @@ https://www.jstatsoft.org/article/view/v059i10
 ### __Next R Clubs:__
 
 __Wednesday 13.05__  
-[7 Exploratory Data Analysis - Part I (7.1 - 7.4)](https://r4ds.had.co.nz/exploratory-data-analysis.html)  
+[9 Introduction](https://r4ds.had.co.nz/wrangle-intro.html)  
+[10 Tibbles](https://r4ds.had.co.nz/tibbles.html)    
+Lecture of Charly on Tidy Data!  
 
 
 __Wednesday 20.05__  
-[7 Exploratory Data Analysis - Part II (7.5 - 7.8)](https://r4ds.had.co.nz/exploratory-data-analysis.html)  
+[7 Exploratory Data Analysis - Part I (7.1 - 7.2)](https://r4ds.had.co.nz/exploratory-data-analysis.html)  
 
 
 __Wednesday 27.05__  
-[9 Introduction](https://r4ds.had.co.nz/wrangle-intro.html)  
-[10 Tibbles](https://r4ds.had.co.nz/tibbles.html)    
+[7 Exploratory Data Analysis - Part II (7.5 - 7.8)](https://r4ds.had.co.nz/exploratory-data-analysis.html)  
 
 
 __Wednesday 03.06__  
