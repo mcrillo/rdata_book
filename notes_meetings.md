@@ -29,8 +29,10 @@ __Stefanie Moorthi:__
 https://github.com/cimentadaj/R4DS-Solutions
 
 __Nils:__  
+An example on how I lable my Axis scientifically:
+```{r, echo=FALSE}
 ylab(expression(paste("PAR and PUR [", mu, "mol photons "," ", m^-2, s^-1,"]")))  
-An example on how I lable my Axis scientifically
+```
 
 __Philipp:__  
 https://www.jstatsoft.org/article/view/v059i10
