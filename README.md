@@ -21,9 +21,10 @@ https://www.jstatsoft.org/article/view/v059i10
 ### __Next R Clubs:__
 
 __Wednesday 13.05__  
+Lecture of Charly on Tidy Data  
+Plus read:  
 [9 Introduction](https://r4ds.had.co.nz/wrangle-intro.html)  
 [10 Tibbles](https://r4ds.had.co.nz/tibbles.html)    
-Lecture of Charly on Tidy Data!  
 
 
 __Wednesday 20.05__  
