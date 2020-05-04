@@ -24,7 +24,7 @@ __Wednesday 13.05__
 [7 Exploratory Data Analysis - Part I (7.1 - 7.4)](https://r4ds.had.co.nz/exploratory-data-analysis.html)  
 
 
-__Wednesday 20.05: II Wrangle__  
+__Wednesday 20.05__  
 [7 Exploratory Data Analysis - Part II (7.5 - 7.8)](https://r4ds.had.co.nz/exploratory-data-analysis.html)  
 
 
