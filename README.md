@@ -5,9 +5,10 @@
 R for Data Science (Garrett Grolemund & Hadley Wickham)  
 https://r4ds.had.co.nz/  
 
-
 Solutions and notes on R for Data Science:  
 https://github.com/cimentadaj/R4DS-Solutions  
+
+Other links:
 
 ggplot2 helpful links:   
 https://ggplot2.tidyverse.org/reference/#section-layer-geoms  
@@ -15,6 +16,9 @@ https://rstudio.com/wp-content/uploads/2015/03/ggplot2-cheatsheet.pdf
 
 Hadley Wickham paper on Tidy Data  
 https://www.jstatsoft.org/article/view/v059i10  
+
+Data Viz course by Andrew Heiss:
+https://datavizm20.classes.andrewheiss.com/
 
 
 
