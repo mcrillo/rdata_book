@@ -24,28 +24,20 @@ https://datavizm20.classes.andrewheiss.com/
 
 ### __Next R Clubs:__
 
-__Wednesday 13.05__  
-_Lecture of Charly on Tidy Data_  
-Plus read:  
-[9 Introduction](https://r4ds.had.co.nz/wrangle-intro.html)  
-[12 Tidy data (intro): 12.1 & 12.2](https://r4ds.had.co.nz/tidy-data.html)  
-
 __Wednesday 20.05__  
-Charly exercises  
+Exercise: tidy up Charly data (see folder Charly exercise)  
 Read: [12 Tidy data- Part I (12.3 - 12.4)](https://r4ds.had.co.nz/tidy-data.html)  
-
 
 __Wednesday 27.05__  
 Exercises: [12 Tidy data- Part I (12.3 - 12.4)](https://r4ds.had.co.nz/tidy-data.html)  
-Read + exercises:  
-[10 Tibbles](https://r4ds.had.co.nz/tibbles.html)    
-[11 Data import](https://r4ds.had.co.nz/data-import.html)  
 
 __Wednesday 03.06__  
-[12 Tidy data- Part II (12.5 - 12.7)](https://r4ds.had.co.nz/tidy-data.html)   
+Read: [12 Tidy data- Part II (12.5 - 12.7)](https://r4ds.had.co.nz/tidy-data.html)   
+Tidy your data!  
 
 __Wednesday 10.06__   
-Tidy your data!  
+[10 Tibbles](https://r4ds.had.co.nz/tibbles.html)    
+[11 Data import](https://r4ds.had.co.nz/data-import.html)   
 
 __Wednesday 17.06__   
 [7 Exploratory Data Analysis - Part I (7.1 - 7.4)](https://r4ds.had.co.nz/exploratory-data-analysis.html)  
