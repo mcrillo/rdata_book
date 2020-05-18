@@ -31,11 +31,15 @@ Plus read:
 [12 Tidy data (intro): 12.1 & 12.2](https://r4ds.had.co.nz/tidy-data.html)  
 
 __Wednesday 20.05__  
-[10 Tibbles](https://r4ds.had.co.nz/tibbles.html)    
-[11 Data import](https://r4ds.had.co.nz/data-import.html)  
+Charly exercises  
+Read: [12 Tidy data- Part I (12.3 - 12.4)](https://r4ds.had.co.nz/tidy-data.html)  
+
 
 __Wednesday 27.05__  
-[12 Tidy data- Part I (12.3 - 12.4)](https://r4ds.had.co.nz/tidy-data.html)  
+Exercises: [12 Tidy data- Part I (12.3 - 12.4)](https://r4ds.had.co.nz/tidy-data.html)  
+Read + exercises:  
+[10 Tibbles](https://r4ds.had.co.nz/tibbles.html)    
+[11 Data import](https://r4ds.had.co.nz/data-import.html)  
 
 __Wednesday 03.06__  
 [12 Tidy data- Part II (12.5 - 12.7)](https://r4ds.had.co.nz/tidy-data.html)   
