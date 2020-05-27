@@ -68,18 +68,18 @@ stocks
 
 stocks %>% 
   pivot_wider(names_from = year, values_from = return) %>% # rows into columns - all rows from the selected column
-  pivot_longer(c(`2015`,`2016`), names_to = "year", values_to = "return") # columns into rows - which columns?
+  pivot_longer(c(`2015`,`2016`), names_to = "year", values_to = "return", 
+               names_ptype = list(year = factor()),
+               values_ptype = list(return = character()) ) # columns into rows - which columns?
 
 ?pivot_longer
-
-names_ptype = list(year = double())
 
 
 # 2
 table4a 
 
 table4a %>% 
-  pivot_longer(c(1999, 2000), names_to = "year", values_to = "cases")
+  pivot_longer(c(`1999`, `2000`), names_to = "year", values_to = "cases")
 
 
 # 3
@@ -94,7 +94,7 @@ people <- tribble(
 )
 
 people %>% 
-  pivot_wider(names_from = names, values_from = values) 
+  pivot_wider(names_from = names, values_from = values)
 
 people %>% 
   group_by(name, names) %>%
@@ -122,7 +122,7 @@ table3 %>%
   separate(rate, into = c("cases", "population"), sep = "/") # default: splits at non-alphanumeric character
 
 table3 %>% 
-  separate(year, into = c("millenium","century", "year"), sep = c(1,2))
+  separate(year, into = c("millenium","century", 'decade', "year"), sep = c(1,2, 3))
 
 table5 %>% 
   unite(new, century, year, sep = "")
@@ -136,7 +136,7 @@ table5 %>%
 letters <- tibble(x = c("a,b,c", "d,e,f,g", "h,i,j"))
 
 letters %>% 
-  separate(x, into = c("one", "two")) # missing a lot
+  separate(x, into = c("one", "two"), sep =",") # missing a lot
 
 letters %>% 
   separate(x, into = c("one", "two"), extra = "merge")
@@ -163,6 +163,10 @@ letters2 %>%
 
 #
 
+
+letters %>% 
+  separate(x, into = c("one", "two"), sep = ",")
+
 letters %>% 
   separate(x, into = c("one", "two"), sep = 3)
 
@@ -176,10 +180,10 @@ letters2 %>%
 ?separate
 
 df <- data.frame(x = c(NA, "a-b", "a-d", "b-c", "d-e"))
-df %>% extract(x, "A")
-df %>% extract(x, c("A", "B"), regex = "([[:alnum:]]+)-([[:alnum:]]+)")
 
 df %>% separate(x, into = c("l1", "l2"), sep = 2)
 df %>% separate(x, into = c("l1", "l2"), sep = "-")
 
+df %>% extract(x, "A")
+df %>% extract(x, c("A", "B"), regex = "([[:alnum:]]+)-([[:alnum:]]+)")
 
