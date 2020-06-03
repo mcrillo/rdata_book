@@ -1,11 +1,12 @@
-## load tidyverse ##
+
+### R Club 03/June/2020
+
 library(tidyverse)
-setwd("/Users/marinacostarillo/Dropbox/Postdoc/projects/rdata_book/Charly_exercises")
 
 # manual import of data 
 ## decimal mark? separator?
 
-Cell_counts_Phyto_S3_journalclub <- read_delim("Cell_counts_Phyto_S3_journalclub.csv", 
+Cell_counts_Phyto_S3_journalclub <- read_delim("rdata_book/Charly_exercises/Cell_counts_Phyto_S3_journalclub.csv", 
                                                delim = ";", escape_double = FALSE, 
                                                locale = locale(decimal_mark = ","), 
                                                trim_ws = TRUE)
