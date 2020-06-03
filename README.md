@@ -5,10 +5,20 @@
 R for Data Science (Garrett Grolemund & Hadley Wickham)  
 https://r4ds.had.co.nz/  
 
+### __Next R Clubs:__
+
+__Wednesday 17.06__   
+Discussion exercises: [7 Exploratory Data Analysis](https://r4ds.had.co.nz/exploratory-data-analysis.html)   
+
+__Wednesday 01.07__   
+Discussion exercises: [11 Data import](https://r4ds.had.co.nz/data-import.html)   
+
+
+
+###__Useful links__:
+
 Solutions and notes on R for Data Science:  
 https://github.com/cimentadaj/R4DS-Solutions  
-
-Other links:
 
 ggplot2 helpful links:   
 https://ggplot2.tidyverse.org/reference/#section-layer-geoms  
@@ -21,11 +31,5 @@ Data Viz course by Andrew Heiss:
 https://datavizm20.classes.andrewheiss.com/
 
 
-### __Next R Clubs:__
 
-__Wednesday 17.06__   
-Discussion exercises: [7 Exploratory Data Analysis](https://r4ds.had.co.nz/exploratory-data-analysis.html)   
-
-__Wednesday 01.07__   
-Discussion exercises: [11 Data import](https://r4ds.had.co.nz/data-import.html)   
 
