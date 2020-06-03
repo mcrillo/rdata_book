@@ -21,15 +21,11 @@ Data Viz course by Andrew Heiss:
 https://datavizm20.classes.andrewheiss.com/
 
 
-
 ### __Next R Clubs:__
 
-__Wednesday 03.06__  
-Read: [10 Tibbles](https://r4ds.had.co.nz/tibbles.html)    
-Read: [12 Tidy data- Part II (12.5 - 12.7)](https://r4ds.had.co.nz/tidy-data.html)   
-Tidy your data!  
+__Wednesday 17.06__   
+Discussion exercices: [7 Exploratory Data Analysis](https://r4ds.had.co.nz/exploratory-data-analysis.html)   
 
-__Wednesday 10.06__   
-Read: [11 Data import](https://r4ds.had.co.nz/data-import.html)   
-Tidy your data!  
+__Wednesday 01.07__   
+Discussion exercices: [11 Data import](https://r4ds.had.co.nz/data-import.html)   
 
