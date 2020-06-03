@@ -15,7 +15,8 @@ Discussion exercises: [11 Data import](https://r4ds.had.co.nz/data-import.html)
 
 
 
-###__Useful links__:
+
+### __Useful links:__  
 
 Solutions and notes on R for Data Science:  
 https://github.com/cimentadaj/R4DS-Solutions  
