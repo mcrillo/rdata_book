@@ -24,8 +24,8 @@ https://datavizm20.classes.andrewheiss.com/
 ### __Next R Clubs:__
 
 __Wednesday 17.06__   
-Discussion exercices: [7 Exploratory Data Analysis](https://r4ds.had.co.nz/exploratory-data-analysis.html)   
+Discussion exercises: [7 Exploratory Data Analysis](https://r4ds.had.co.nz/exploratory-data-analysis.html)   
 
 __Wednesday 01.07__   
-Discussion exercices: [11 Data import](https://r4ds.had.co.nz/data-import.html)   
+Discussion exercises: [11 Data import](https://r4ds.had.co.nz/data-import.html)   
 
