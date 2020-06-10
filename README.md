@@ -7,10 +7,12 @@ https://r4ds.had.co.nz/
 
 ### __Next R Clubs:__
 
-__Wednesday 17.06__   
+(Summer break)  
+
+__Wednesday 29.07__   
 Discussion exercises: [7 Exploratory Data Analysis](https://r4ds.had.co.nz/exploratory-data-analysis.html)   
 
-__Wednesday 01.07__   
+__Wednesday 12.08__   
 Discussion exercises: [11 Data import](https://r4ds.had.co.nz/data-import.html)   
 
 
